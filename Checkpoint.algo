@@ -7,7 +7,7 @@ BEGIN
     Read(sentence);
     Read(_lengthCount);
     _lengthCount := sentence.length;
-    write(_lengthCount);
+    Write(_lengthCount);
 END
 
 //***********************************The number of words in the sentence (assuming that the words are separated by a single space).
@@ -19,7 +19,7 @@ BEGIN
     Read(sentence); 
     Read(Wordcount);
     Wordcount := sentence.split(Single_space).length;
-    write(Wordcount);
+    Write(Wordcount);
 END
 
 //***********************************The number of vowels in the sentence.
@@ -34,10 +34,10 @@ BEGIN
     Read(vowelsListe);
     Read(vowelscount);
 
-    FOR i FROM 0 TO sentence.length STEP 1  DO
+    FOR i FROM 0 TO sentence.length  DO
         IF (vowelsListe.indexOf(sentence[i]) !== 1) THEN
             vowelscount := vowelscount + 1
         END_IF
     END_FOR
-    write(vowelscount);
+    Write(vowelscount);
 END
