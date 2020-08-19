@@ -1,0 +1,43 @@
+//***********************************The length of the sentence (the number of characters).
+ALGORITHM The_length_of_the_sentence 
+VAR
+    sentence : CHAR := "str";
+    _lengthCount : INTEGER := 0;
+BEGIN
+    Read(sentence);
+    Read(_lengthCount);
+    _lengthCount := sentence(string.prototype.length);
+    write(_lengthCount);
+END
+
+//***********************************The number of words in the sentence (assuming that the words are separated by a single space).
+ALGORITHM The_number_of_words_in_the_sentence
+VAR
+    sentence : CHAR := "str";
+    Wordcount : INTEGER := 0;
+BEGIN
+    Read(sentence); 
+    Read(Wordcount);
+    Wordcount := sentence(String.prototype.split(Single_space))(string.prototype.length);
+    write(Wordcount);
+END
+
+//***********************************The number of vowels in the sentence.
+ALGORITHM •	The_number_of_vowels_in_the_sentence
+VAR
+    sentence : CHAR := "str";
+    vowelsListe : CHAR := "aeiouy"
+    vowelscount : INTEGER := 0;
+
+BEGIN
+    Read(sentence);
+    Read(vowelsListe);
+    Read(vowelscount);
+
+    FOR i FROM 0 TO sentence(string.prototype.length)  DO
+        IF (vowelsListe(String.prototype.indexOf(sentence[i])) !== 1) THEN
+            vowelscount := vowelscount + 1
+        END_IF
+    END_FOR
+    write(vowelscount);
+END
