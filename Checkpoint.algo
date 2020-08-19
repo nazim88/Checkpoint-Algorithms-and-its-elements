@@ -1,7 +1,7 @@
 //***********************************The length of the sentence (the number of characters).
 ALGORITHM The_length_of_the_sentence 
 VAR
-    sentence : CHAR := "str";
+    sentence : CHAR := "Checkpoint Algorithms and its elements .";
     _lengthCount : INTEGER := 0;
 BEGIN
     Read(sentence);
@@ -13,7 +13,7 @@ END
 //***********************************The number of words in the sentence (assuming that the words are separated by a single space).
 ALGORITHM The_number_of_words_in_the_sentence
 VAR
-    sentence : CHAR := "str";
+    sentence : CHAR := "Checkpoint Algorithms and its elements .";
     Wordcount : INTEGER := 0;
 BEGIN
     Read(sentence); 
@@ -25,7 +25,7 @@ END
 //***********************************The number of vowels in the sentence.
 ALGORITHM •	The_number_of_vowels_in_the_sentence
 VAR
-    sentence : CHAR := "str";
+    sentence : CHAR := "Checkpoint Algorithms and its elements .";
     vowelsListe : CHAR := "aeiouy"
     vowelscount : INTEGER := 0;
 
