@@ -6,7 +6,7 @@ VAR
 BEGIN
     Read(sentence);
     Read(_lengthCount);
-    _lengthCount := sentence(string.prototype.length);
+    _lengthCount := sentence.(string.prototype.length);
     write(_lengthCount);
 END
 
@@ -18,7 +18,7 @@ VAR
 BEGIN
     Read(sentence); 
     Read(Wordcount);
-    Wordcount := sentence(String.prototype.split(Single_space))(string.prototype.length);
+    Wordcount := sentence.(String.prototype.split(Single_space)).(string.prototype.length);
     write(Wordcount);
 END
 
@@ -34,8 +34,8 @@ BEGIN
     Read(vowelsListe);
     Read(vowelscount);
 
-    FOR i FROM 0 TO sentence(string.prototype.length)  DO
-        IF (vowelsListe(String.prototype.indexOf(sentence[i])) !== 1) THEN
+    FOR i FROM 0 TO sentence.(string.prototype.length)  DO
+        IF (vowelsListe.(String.prototype.indexOf(sentence[i])) !== 1) THEN
             vowelscount := vowelscount + 1
         END_IF
     END_FOR
